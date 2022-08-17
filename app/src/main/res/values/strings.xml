@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Trivi-Rab</string>
+    <string name="App_Description">This is a Trivia application</string>
+
+    <string name="Welcome"> Welcome !</string>
+
+    <!--    <String-array name="rangeSlider">-->
+    <!--        <item>20</item>-->
+    <!--        <item>70</item>-->
+    <!--    </String-array>-->
+
+</resources>
