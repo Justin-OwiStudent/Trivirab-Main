@@ -35,24 +35,26 @@ class QuestionActivity : AppCompatActivity() {
 
         //handle next question click
         binding.btnNextQuestion.setOnClickListener{
-            val intent = Intent(this, QuestionActivity::class.java)
 
+            if(questionNumber + 1 == questions.count()) {
+                val intent = Intent(this, resultActivity::class.java)
+                //TODO: pass final score
+                startActivity(intent)
+                finish()
 
+            } else {
 
-            if(questionNumber + 1 > questions.count()) {
-                
+                val intent = Intent(this, QuestionActivity::class.java)
+                //pass next questionvalue
+                intent.putExtra("questionNumber", questionNumber + 1)
 
+                //TODO: pass score
+
+                startActivity(intent)
+                finish()
             }
 
-            //pass next questionvalue
-            intent.putExtra("questionNumber", questionNumber + 1)
 
-
-
-            //TODO: pass score
-
-            startActivity(intent)
-            finish()
         }
 
 
@@ -115,16 +117,6 @@ class QuestionActivity : AppCompatActivity() {
 //                    finish()
 //                }
 //        }
-
-
-
-
-
-
-
-
-
-
 
 //        binding.pbline.progress = currrentQuestion.id
 //        binding.tvProgress.text = currrentQuestion.id.toString() + "/3"

@@ -54,5 +54,23 @@ object Constants {
 
 
     //TODO: add disney questions
+    fun getAllDisneyQuestions() : ArrayList<Question> {
+        //Create my empty arraylist
+        var allQuestions = ArrayList<Question>()
 
+        //create data
+        val que1 = Question(
+            1,
+            "What Cartoon had a purple dog?",
+            "Naruto Uzumaki",
+            "Kakashi Sensei",
+            "Saske Uchiha",
+            "Neji Huga"
+        )
+        //add question to array
+        allQuestions.add(que1)
+
+        //return data
+        return allQuestions
+    }
 }
