@@ -1,5 +1,6 @@
 package com.example.trivi_rab
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.trivi_rab.databinding.ActivityCatagorieBinding
@@ -15,5 +16,16 @@ class Landing : AppCompatActivity() {
 
         binding = ActivityLandingBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.tvHowTo.setOnClickListener {
+            val intent = Intent(this, HowToActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.tvCata.setOnClickListener {
+            val intent = Intent(this, CatagorieActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

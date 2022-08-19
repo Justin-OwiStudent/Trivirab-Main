@@ -19,7 +19,17 @@ class resultActivity : AppCompatActivity() {
         //get scores
         val finalScore = intent.getIntExtra("currenScore", 0)
 
+        binding.btnGoHome.setOnClickListener{
+            val intent = Intent(this, Landing::class.java)
+            startActivity(intent)
 
+        }
+
+        binding.btnAgain.setOnClickListener{
+            val intent = Intent(this, CatagorieActivity::class.java)
+            startActivity(intent)
+
+        }
 
 //        //TODO: uopdate UI
 //        binding.tvResult.text = "$finalScore/2"

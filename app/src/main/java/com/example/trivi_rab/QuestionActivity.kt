@@ -23,10 +23,10 @@ class QuestionActivity : AppCompatActivity() {
 
 
         //get the question number from previous activity
-        var questionNumber = intent.getIntExtra("questionNumber", 0)
+        val questionNumber = intent.getIntExtra("questionNumber", 0)
 
         //call for all my questions
-        var questions = getAllNarutoQuestions()
+        val questions = getAllNarutoQuestions()
 
         val currentQuestion = questions[questionNumber]
 
@@ -54,19 +54,7 @@ class QuestionActivity : AppCompatActivity() {
                 finish()
             }
 
-
         }
-
-
-
-
-//        binding.tvQuestionText.text({questions[0].questionText})
-
-
-//        binding.answerOne.text = "Hello my naam is Justin"
-       // R.id.tv_question_text.
-
-
 
 
 //get the current score from previous question
@@ -84,8 +72,10 @@ class QuestionActivity : AppCompatActivity() {
 //                val toast = Toast.makeText(this, "please select your answer", LENGTH_SHORT)
 //                toast.show()
 //            } else { // this means the user has selected an answer, lets check correct and navigate
-//                var userAnswer = findViewById<RadioButton>(selectedAnswer) // fin the view that has been selected by their radio id
+//                var userAnswer =
+//                    findViewById<RadioButton>(selectedAnswer) // fin the view that has been selected by their radio id
 //                log.i("!!! selected answer: ", userAnswer.text.toString())
+//            }
 //
 //                //check correct answer
 //                if(userAnswer.text.toString() == currentQuestion.optionOne) { //youl have this to be equal corect answer "optionone" is the right answer then
@@ -117,7 +107,7 @@ class QuestionActivity : AppCompatActivity() {
 //                    finish()
 //                }
 //        }
-
+//
 //        binding.pbline.progress = currrentQuestion.id
 //        binding.tvProgress.text = currrentQuestion.id.toString() + "/3"
     }

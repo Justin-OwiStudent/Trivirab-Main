@@ -36,7 +36,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:text="You Passed !"/>
+                android:text="You Know your cartoons !"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -54,7 +54,7 @@
                 android:textSize="62sp"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:text="3/3"/>
+                android:text="3/5"/>
 
 
             <LinearLayout
