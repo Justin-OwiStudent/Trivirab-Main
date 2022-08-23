@@ -29,7 +29,7 @@
                 android:layout_marginBottom="10dp"/>
 
             <TextView
-                android:id="@+id/text_message"
+                android:id="@+id/tv_message"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
@@ -47,7 +47,7 @@
                 android:text="Final Score"/>
 
             <TextView
-                android:id="@+id/btn_score"
+                android:id="@+id/tv_result"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"

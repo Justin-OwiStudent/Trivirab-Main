@@ -4,6 +4,14 @@
 
     <string name="Welcome"> Welcome !</string>
 
+    <string name="AnimeFail"> Go watch some more Naruto!</string>
+    <string name="CartoonsFail"> You need to watch some cartoons!</string>
+    <string name="DisneyFail"> Someone needs to get their Disney on!</string>
+
+    <string name="Anime"> Wow, you know your Naruto!</string>
+    <string name="Cartoons"> Wow, you know your Cartoons!</string>
+    <string name="Disney"> Wow, you know your stuff!</string>
+
     <!--    <String-array name="rangeSlider">-->
     <!--        <item>20</item>-->
     <!--        <item>70</item>-->

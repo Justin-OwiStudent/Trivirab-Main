@@ -17,7 +17,7 @@ class resultActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //get scores
-        val finalScore = intent.getIntExtra("currenScore", 0)
+        val finalScore = intent.getIntExtra("currentScore", 0)
 
         binding.btnGoHome.setOnClickListener{
             val intent = Intent(this, Landing::class.java)
@@ -31,18 +31,18 @@ class resultActivity : AppCompatActivity() {
 
         }
 
-//        //TODO: uopdate UI
-//        binding.tvResult.text = "$finalScore/2"
-//        if(finalScore >= 2) {
-//            binding.tvMessage.text = "youa rea s robot"
-//            binding.ivImage.setImageResource(R.drawable.ic_success)
-//            binding.tvResults.setTextColor(R.color.success_color)
-//        } else {
-//            binding.tvMessage.text = "you are a human"
-//            binding.ivImage.setImageResource(R.drawable.ic_cancel)
-//            binding.tvResults.setTextColor(R.color.error_color)
-//        }
-//
+        //TODO: uopdate UI
+        binding.tvResult.text = "$finalScore/2"
+        if(finalScore >= 2) {
+            binding.tvMessage.text = "Well done, You passed!"
+            binding.ivImage.setImageResource(R.drawable.ic_success)
+//            binding.tvResult.setTextColor(R.color.MySuccessColor)
+        } else {
+            binding.tvMessage.text = "Bad luck, try again ?"
+            binding.ivImage.setImageResource(R.drawable.ic_cancel)
+//            binding.tvResult.setTextColor(R.color.error_color)
+        }
+
 //        //handle navigation clicks
 //        binding.btnGoHome.setOnClickListener {
 //            val intent = Intent(this, MainActivity::class.java)

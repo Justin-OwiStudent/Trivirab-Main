@@ -26,7 +26,18 @@ class CatagorieActivity : AppCompatActivity() {
             startActivity(intent)
 
         }
+
+        binding.btnCartoon.setOnClickListener{
+            val intent = Intent(this, CartoonActivity::class.java)
+            startActivity(intent)
+
+        }
 //
+        binding.btnDisney.setOnClickListener{
+            val intent = Intent(this, DisenyActivity::class.java)
+            startActivity(intent)
+
+        }
 //        val intent = Intent(this, )
     }
 }

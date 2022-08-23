@@ -26,6 +26,8 @@
 
     <color name="MyOrangeTint">#C68963</color>
 
+    <color name="MySuccessColor">#C68963</color>
+    <color name="MyFailColor">#C68963</color>
 
 
 
