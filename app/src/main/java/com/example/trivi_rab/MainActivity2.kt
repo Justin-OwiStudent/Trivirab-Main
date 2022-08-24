@@ -15,9 +15,7 @@ class MainActivity2 : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setContentView(R.layout.activity_main)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+
 
 
         binding.btnStart.setOnClickListener {
@@ -27,7 +25,7 @@ class MainActivity2 : AppCompatActivity() {
                 Toast.makeText(this, "Please enter your name", Toast.LENGTH_SHORT).show()
             } else {
                 Toast.makeText(this, "$username", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, CatagorieActivity::class.java)
+                val intent = Intent(this, Landing::class.java)
 
                 intent.putExtra("username", username)
 

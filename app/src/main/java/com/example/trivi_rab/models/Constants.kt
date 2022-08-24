@@ -1,6 +1,11 @@
 package com.example.trivi_rab.models
 
 object Constants {
+
+    val USER_NAME: String = "username"
+    val LAST_USER: String = "lastuser"
+    val LAST_RESULT: String = "Lastresult"
+
         // this function will return all my questions
     fun getAllNarutoQuestions() : ArrayList<Question> {
         //Create my empty arraylist
@@ -18,8 +23,8 @@ object Constants {
             val que2 = Question(
                 2,
                 "Which character posesses the sharingan",
+                "Naruto Uchiha",
                 "Saske Uchiha",
-                "Naruto Uzumaki",
                 "Rock Lee",
                 "Hinata Huga"
             )
@@ -27,31 +32,31 @@ object Constants {
                 3,
                 "What tailed beast does Naruto posses ?",
                 "One Tails",
-                "Three Tails",
+                "Nine Tails",
                 "Five Tails",
-                "Nine Tails"
+                "Three Tails"
             )
             val que4 = Question(
                 4,
                 "Which character posesses the biakugan",
                 "Saske Uchiha",
-                "Naruto Uzumaki",
+                "Hinata Huga",
                 "Rock Lee",
-                "Hinata Huga"
+                "Naruto Uzumaki"
             )
             val que5 = Question(
                 5,
-                "which Character can only do tai Jutsu?",
+                "Which Character can only do tai Jutsu?",
                 "Saske Uchiha",
-                "Naruto Uzumaki",
                 "Rock Lee",
+                "Naruto Uchiha",
                 "Hinata Huga"
             )
             val que6 = Question(
                 6,
                 "who became the 6th hokage?",
-                "Kakashi Hatake",
                 "Naruto Uzumaki",
+                "Kakashi Hatake",
                 "Sasuske Uchiha",
                 "Neji Huga"
             )
@@ -63,14 +68,14 @@ object Constants {
                 "Rock Lee",
                 "Hinata Huga"
             )
-            val que8 = Question(
-                8,
-                "Who was not a student of Kakashi Sensei",
-                "Saske Uchiha",
-                "Naruto Uzumaki",
-                "Sakura ",
-                "Hinata Huga"
-            )
+//            val que8 = Question(
+//                8,
+//                "Who was not a student of Kakashi Sensei",
+//                "Saske Uchiha",
+//                "Naruto Uzumaki",
+//                "Sakura ",
+//                "Hinata Huga"
+//            )
             //add question to array
             allNarutoQuestions.add(que1)
             allNarutoQuestions.add(que2)
@@ -79,7 +84,7 @@ object Constants {
             allNarutoQuestions.add(que5)
             allNarutoQuestions.add(que6)
             allNarutoQuestions.add(que7)
-            allNarutoQuestions.add(que8)
+
 
             //return data
             return allNarutoQuestions
@@ -100,7 +105,7 @@ object Constants {
             "Code name kids next door"
         )
         val que2 = Question(
-            1,
+            2,
             "Which cartoon was based on babies?",
             "Rug Rats",
             "Code name kids next door",
@@ -108,7 +113,7 @@ object Constants {
             "Spongebob"
         )
         val que3 = Question(
-            1,
+            3,
             "What Cartoon was based under the sea ?",
             "Spongebob Squarepants",
             "powerPuff girls",
@@ -116,7 +121,7 @@ object Constants {
             "Family guy"
         )
         val que4 = Question(
-            1,
+            4,
             "What Cartoon had a talking dog?",
             "Rug Rats",
             "Family GUy",
@@ -124,7 +129,7 @@ object Constants {
             "Johnny Bravo"
         )
         val que5 = Question(
-            1,
+            5,
             "What cartoon is said to have predicted the future?",
             "The simpsons",
             "Family Guy",
@@ -132,7 +137,7 @@ object Constants {
             "Rug Rats"
         )
         val que6 = Question(
-            1,
+            6,
             "What Cartoon was based on Small blue people?",
             "The Simpsons",
             "Smurfs",
@@ -140,7 +145,7 @@ object Constants {
             "Family guy"
         )
         val que7 = Question(
-            1,
+            7,
             "What was the dogs name in Family Guy?",
             "Petter",
             "Brian",
@@ -181,7 +186,7 @@ object Constants {
             "Neji Huga"
         )
         val que2 = Question(
-            1,
+            2,
             "Which movie was based on lions?",
             "Cinderella",
             "Lion King",
@@ -189,7 +194,7 @@ object Constants {
             "Nemo"
         )
         val que3 = Question(
-            1,
+            3,
             "Which movie was based on fish ?",
             "Moana",
             "Finding Nemo",
@@ -197,7 +202,7 @@ object Constants {
             "Beauty and the Beast"
         )
         val que4 = Question(
-            1,
+            4,
             "Which movie had a floating house?",
             "Naruto Uzumaki",
             "Kakashi Sensei",
@@ -205,7 +210,7 @@ object Constants {
             "Neji Huga"
         )
         val que5 = Question(
-            1,
+            5,
             "Which movie had a Geni?",
             "Cinderella",
             "Alladin",
@@ -213,7 +218,15 @@ object Constants {
             "Finding Nemo"
         )
         val que6 = Question(
-            1,
+            6,
+            "What movie had a, not so real boy?",
+            "Finding Nemo",
+            "Pinocio",
+            "Allading",
+            "Cinderella"
+        )
+        val que7 = Question(
+            7,
             "What movie had a, not so real boy?",
             "Finding Nemo",
             "Pinocio",
@@ -228,6 +241,7 @@ object Constants {
         allDisneyQuestions.add(que4)
         allDisneyQuestions.add(que5)
         allDisneyQuestions.add(que6)
+        allDisneyQuestions.add(que7)
 
         //return data
         return allDisneyQuestions

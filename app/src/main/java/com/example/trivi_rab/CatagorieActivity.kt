@@ -3,8 +3,10 @@ package com.example.trivi_rab
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.trivi_rab.databinding.ActivityCatagorieBinding
 import com.example.trivi_rab.databinding.ActivityQuestionBinding
+import com.example.trivi_rab.models.Constants
 
 class CatagorieActivity : AppCompatActivity() {
 
@@ -17,6 +19,7 @@ class CatagorieActivity : AppCompatActivity() {
         binding = ActivityCatagorieBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val username = intent.getStringExtra("username")
 
 
 //        val intent = Intent(this, CatagorieActivity::class.java)
@@ -38,6 +41,17 @@ class CatagorieActivity : AppCompatActivity() {
             startActivity(intent)
 
         }
+
+        //get last results
+        binding.fabInfo.setOnClickListener{
+            val sharedPref = getSharedPreferences("myPref", MODE_PRIVATE)
+            val lastUser = sharedPref.getString(Constants.LAST_USER, "None")
+            val lastResult = sharedPref.getInt(Constants.LAST_RESULT, 0)
+
+            val toast = Toast.makeText(this, "Last User: $lastUser ($lastResult)", Toast.LENGTH_LONG)
+            toast.show()
+        }
+
 //        val intent = Intent(this, )
     }
 }

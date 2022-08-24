@@ -1,16 +1,21 @@
 package com.example.trivi_rab
 
+import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.trivi_rab.databinding.ActivityMainBinding
 import com.example.trivi_rab.databinding.ActivityResultBinding
+import com.example.trivi_rab.models.Constants
+import com.example.trivi_rab.models.Constants.LAST_USER
 
 class resultActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityResultBinding
 
 
+    @SuppressLint("ResourceAsColor")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityResultBinding.inflate(layoutInflater)
@@ -19,23 +24,18 @@ class resultActivity : AppCompatActivity() {
         //get scores
         val finalScore = intent.getIntExtra("currentScore", 0)
 
-        binding.btnGoHome.setOnClickListener{
-            val intent = Intent(this, Landing::class.java)
-            startActivity(intent)
+        val username = intent.getStringExtra("username")
 
-        }
 
-        binding.btnAgain.setOnClickListener{
-            val intent = Intent(this, CatagorieActivity::class.java)
-            startActivity(intent)
 
-        }
 
-        //TODO: uopdate UI
-        binding.tvResult.text = "$finalScore/2"
-        if(finalScore >= 2) {
+
+
+        binding.tvResult.text = "$finalScore/7"
+        if(finalScore >= 7) {
             binding.tvMessage.text = "Well done, You passed!"
             binding.ivImage.setImageResource(R.drawable.ic_success)
+
 //            binding.tvResult.setTextColor(R.color.MySuccessColor)
         } else {
             binding.tvMessage.text = "Bad luck, try again ?"
@@ -43,18 +43,39 @@ class resultActivity : AppCompatActivity() {
 //            binding.tvResult.setTextColor(R.color.error_color)
         }
 
-//        //handle navigation clicks
-//        binding.btnGoHome.setOnClickListener {
-//            val intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-//            finish()
-//        }
-//
-//        binding.btnAgain.setOnClickListener {
-//            val intent = Intent(this, QuestionActivity::class.java)
-//            startActivity(intent)
-//            finish()
-//        }
 
+
+
+        binding.btnGoHome.setOnClickListener{
+            saveLastResults(username.toString(), finalScore)
+
+            val intent = Intent(this, Landing::class.java)
+            startActivity(intent)
+            finish()
+
+        }
+
+        binding.btnAgain.setOnClickListener{
+            saveLastResults(username.toString(), finalScore)
+
+
+            val intent = Intent(this, CatagorieActivity::class.java)
+            intent.putExtra("username", username)
+            startActivity(intent)
+            finish()
+
+            }
+
+        }
+    fun saveLastResults(username: String, result: Int){
+
+        val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
+        val editor = sharedPref.edit()
+
+        editor.apply{
+            putString(Constants.LAST_USER, username)
+            putInt(Constants.LAST_RESULT, result)
+            apply()
+        }
     }
 }

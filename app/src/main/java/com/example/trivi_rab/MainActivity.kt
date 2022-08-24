@@ -6,17 +6,18 @@ import android.os.Bundle
 import android.os.Handler
 import android.widget.Toast
 import com.example.trivi_rab.databinding.ActivityMainBinding
+import com.example.trivi_rab.databinding.ActivitySplashScreenBinding
 
 class MainActivity : AppCompatActivity() {
 
 //    private lateinit var binding = ActivityMainBinding
 
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivitySplashScreenBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivitySplashScreenBinding.inflate(layoutInflater)
 
         setContentView(binding.root) //this sets what XML frontend to use
 
