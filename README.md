@@ -22,18 +22,18 @@
     <img src="https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/app/src/main/res/drawable/logo.png" alt="Logo" width="140" height="140">
   </a>
   
-  <h3 align="center">Project Name</h3>
+  <h3 align="center">Trivi - Rab</h3>
 
   <p align="center">
-    Short Project Slogan / Description <br>
-      <a href="https://github.com/username/projectname"><strong>Explore the docs »</strong></a>
+    An android application developed for my android module at The Open Window Institute, this is a Trivia application with question regarding the Naruto anime, cartoons and disney movies <br>
+      <a href="https://github.com/Justin-OwiStudent/Trivirab-Main"><strong>Explore the docs »</strong></a>
    <br />
    <br />
    <a href="path/to/demonstration/video">View Demo</a>
     ·
-    <a href="https://github.com/username/projectname/issues">Report Bug</a>
+    <a href="https://github.com/Justin-OwiStudent/Trivirab-Main/issues">Report Bug</a>
     ·
-    <a href="https://github.com/username/projectname/issues">Request Feature</a>
+    <a href="https://github.com/Justin-OwiStudent/Trivirab-Main/issues">Request Feature</a>
 </p>
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
@@ -70,7 +70,7 @@
 <!--PROJECT DESCRIPTION-->
 ## About the Project
 <!-- header image of project -->
-![image1][image1]
+![image1](https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-1.png)
 
 ### Project Description
 
@@ -78,9 +78,9 @@ A nice introduction to this amazing project of mine.
 
 ### Built With
 
-* [Technology Name](path/to/technology/website)
-* [Technology Name](path/to/technology/website)
-* [Technology Name](path/to/technology/website)
+* [Android Studio](https://developer.android.com/studio?gclid=CjwKCAjwu5yYBhAjEiwAKXk_eGBPEKpznIFNsu5Y9a8GOtO5n7ZnCNOe3jCEt3yMzmuhw4z2RBKrzBoCVJAQAvD_BwE&gclsrc=aw.ds)
+* [Kotlin](https://kotlinlang.org/)
+
 
 <!-- GETTING STARTED -->
 <!-- Make sure to add appropriate information about what prerequesite technologies the user would need and also the steps to install your project on their own mashines -->
