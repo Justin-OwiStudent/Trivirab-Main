@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:href="http://schemas.android.com/apk/res-auto">
     <string name="app_name">Trivi-Rab</string>
     <string name="App_Description">This is a Trivia application</string>
 
@@ -11,6 +11,11 @@
     <string name="Anime"> Wow, you know your Naruto!</string>
     <string name="Cartoons"> Wow, you know your Cartoons!</string>
     <string name="Disney"> Wow, you know your stuff!</string>
+
+
+
+<!--    <string name="hyperlink">Learn more about this app development at\n<a href="https://github.com/Justin-OwiStudent/Trivirab-Main"></a></string>-->
+
 
     <!--    <String-array name="rangeSlider">-->
     <!--        <item>20</item>-->

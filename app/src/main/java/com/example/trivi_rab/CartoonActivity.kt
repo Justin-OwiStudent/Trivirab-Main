@@ -3,6 +3,8 @@ package com.example.trivi_rab
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.RadioButton
+import android.widget.Toast
 import com.example.trivi_rab.databinding.ActivityCatagorieBinding
 import com.example.trivi_rab.databinding.ActivityQuestionBinding
 import com.example.trivi_rab.models.Constants
@@ -16,8 +18,15 @@ class CartoonActivity : AppCompatActivity() {
         binding = ActivityQuestionBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+        val username = intent.getStringExtra("username")
+
         //get the question number from previous activity
         val questionNumber = intent.getIntExtra("questionNumber", 0)
+
+        var currentScore = intent.getIntExtra("currentScore", 0)
+
+        binding.tvProgress.text = (questionNumber+1).toString()
 
         //call for all my questions
         val questions = Constants.getAllCartoonQuestions()
@@ -30,22 +39,42 @@ class CartoonActivity : AppCompatActivity() {
         //handle next question click
         binding.btnNextQuestion.setOnClickListener{
 
-            if(questionNumber + 1 == questions.count()) {
-                val intent = Intent(this, resultActivity::class.java)
-                //TODO: pass final score
-                startActivity(intent)
-                finish()
 
-            } else {
+            var selectedAnswer = binding.rgAnswers.checkedRadioButtonId
 
-                val intent = Intent(this, QuestionActivity::class.java)
-                //pass next questionvalue
-                intent.putExtra("questionNumber", questionNumber + 1)
+            if(selectedAnswer == -1) { //not selected answer
+                val toast = Toast.makeText(this, "Please select an answer", Toast.LENGTH_SHORT)
+                toast.show()
+            } else { // selected answer correct and navigate
+                var userAnswer = findViewById<RadioButton>(selectedAnswer)
 
-                //TODO: pass score
+                //check correct answer
+                if (userAnswer.text.toString() == currentQuestion.optionOne) {
+                    currentScore += 1
 
-                startActivity(intent)
-                finish()
+                    //TODO: update ui to show if answer is right
+
+                }
+
+                if (questionNumber + 1 == questions.count()) {
+                    val intent = Intent(this, resultActivity::class.java)
+                    intent.putExtra("currentScore", currentScore)
+                    intent.putExtra("username", username)
+
+                    startActivity(intent)
+                    finish()
+
+                } else {
+
+                    val intent = Intent(this, CartoonActivity::class.java)
+                    //pass next questionvalue
+                    intent.putExtra("questionNumber", questionNumber + 1)
+                    intent.putExtra("currentScore", currentScore)
+                    intent.putExtra("username", username)
+                    startActivity(intent)
+                    finish()
+
+                }
             }
 
         }
@@ -54,7 +83,7 @@ class CartoonActivity : AppCompatActivity() {
 
     }
 
-    fun updateUI(currentQuestion: Question) {
+    private fun updateUI(currentQuestion: Question) {
         if (currentQuestion.id == 1){
             binding.tvQuestionText.text = "${currentQuestion.questionText}"
         }else {

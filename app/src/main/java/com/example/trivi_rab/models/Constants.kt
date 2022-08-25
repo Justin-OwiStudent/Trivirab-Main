@@ -90,7 +90,7 @@ object Constants {
             return allNarutoQuestions
     }
 
-    //TODO: add cartoon questions
+
     fun getAllCartoonQuestions() : ArrayList<Question> {
         //Create my empty arraylist
         var allCartoonQuestions = ArrayList<Question>()
@@ -171,7 +171,6 @@ object Constants {
     }
 
 
-    //TODO: add disney questions
     fun getAllDisneyQuestions() : ArrayList<Question> {
         //Create my empty arraylist
         var allDisneyQuestions = ArrayList<Question>()

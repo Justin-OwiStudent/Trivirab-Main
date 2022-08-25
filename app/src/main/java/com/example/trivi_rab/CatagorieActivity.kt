@@ -25,30 +25,40 @@ class CatagorieActivity : AppCompatActivity() {
 //        val intent = Intent(this, CatagorieActivity::class.java)
 
         binding.btnAnime.setOnClickListener{
+            intent.putExtra("username", username)
             val intent = Intent(this, QuestionActivity::class.java)
             startActivity(intent)
 
         }
 
         binding.btnCartoon.setOnClickListener{
+            intent.putExtra("username", username)
             val intent = Intent(this, CartoonActivity::class.java)
             startActivity(intent)
 
         }
 //
         binding.btnDisney.setOnClickListener{
+            intent.putExtra("username", username)
             val intent = Intent(this, DisenyActivity::class.java)
             startActivity(intent)
 
         }
 
+        binding.btnSettings.setOnClickListener{
+            intent.putExtra("username", username)
+            val intent = Intent(this, settingsActivity::class.java)
+            startActivity(intent)
+        }
+
         //get last results
         binding.fabInfo.setOnClickListener{
+//            val username = intent.putExtra("username", username)
             val sharedPref = getSharedPreferences("myPref", MODE_PRIVATE)
-            val lastUser = sharedPref.getString(Constants.LAST_USER, "None")
+            val username = sharedPref.getString(Constants.USER_NAME, "username")
             val lastResult = sharedPref.getInt(Constants.LAST_RESULT, 0)
 
-            val toast = Toast.makeText(this, "Last User: $lastUser ($lastResult)", Toast.LENGTH_LONG)
+            val toast = Toast.makeText(this, "Last User: $username ($lastResult)", Toast.LENGTH_LONG)
             toast.show()
         }
 

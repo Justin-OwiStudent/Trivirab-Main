@@ -14,15 +14,21 @@ class Landing : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_landing)
 
+        val username = intent.getStringExtra("username")
+
         binding = ActivityLandingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.tvHowTo.setOnClickListener {
+            intent.putExtra("username", username)
+
             val intent = Intent(this, HowToActivity::class.java)
             startActivity(intent)
         }
 
         binding.tvCata.setOnClickListener {
+            intent.putExtra("username", username)
+
             val intent = Intent(this, CatagorieActivity::class.java)
             startActivity(intent)
         }

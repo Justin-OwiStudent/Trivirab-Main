@@ -32,12 +32,14 @@ class resultActivity : AppCompatActivity() {
 
 
         binding.tvResult.text = "$finalScore/7"
-        if(finalScore >= 7) {
+        if(finalScore >= 5) {
+            intent.putExtra("username", username)
             binding.tvMessage.text = "Well done, You passed!"
             binding.ivImage.setImageResource(R.drawable.ic_success)
 
 //            binding.tvResult.setTextColor(R.color.MySuccessColor)
         } else {
+            intent.putExtra("username", username)
             binding.tvMessage.text = "Bad luck, try again ?"
             binding.ivImage.setImageResource(R.drawable.ic_cancel)
 //            binding.tvResult.setTextColor(R.color.error_color)
@@ -50,12 +52,14 @@ class resultActivity : AppCompatActivity() {
             saveLastResults(username.toString(), finalScore)
 
             val intent = Intent(this, Landing::class.java)
+            intent.putExtra("username", username)
             startActivity(intent)
             finish()
 
         }
 
         binding.btnAgain.setOnClickListener{
+
             saveLastResults(username.toString(), finalScore)
 
 
@@ -67,13 +71,14 @@ class resultActivity : AppCompatActivity() {
             }
 
         }
-    fun saveLastResults(username: String, result: Int){
 
+    private fun saveLastResults(username: String, result: Int){
+        intent.putExtra("username", username)
         val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
         val editor = sharedPref.edit()
 
         editor.apply{
-            putString(Constants.LAST_USER, username)
+            putString(Constants.USER_NAME, username)
             putInt(Constants.LAST_RESULT, result)
             apply()
         }

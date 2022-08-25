@@ -56,6 +56,7 @@ class QuestionActivity : AppCompatActivity() {
                     currentScore += 1
 
                     //TODO: update ui to show if answer is right
+
                 }
 
 
