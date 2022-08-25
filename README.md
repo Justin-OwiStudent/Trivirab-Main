@@ -125,7 +125,7 @@ Run the following in the command-line to install all the required dependencies:
 
 Questions Activity, here the questions are displayed from all the catagories depending on which one you choose.
 
-![image3](https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-4.png)
+![image3](https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-4.png =250x250)
 ### Feature 2
 
 Here are the Catagories displayed that are available on the application
