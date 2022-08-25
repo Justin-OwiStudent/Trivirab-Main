@@ -145,7 +145,7 @@ The `Conceptual Process` is the set of actions, activities and research that was
 
 ### Ideation
 
-![image5](https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/moodboard%20(1).png)
+![image5](https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/moodboard.png)
 <br>
 ![image6][image6]
 
@@ -155,7 +155,7 @@ The `Conceptual Process` is the set of actions, activities and research that was
 
 ### User-flow
 
-![image8][image8]
+![image8](https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/User%20Flow%20Diagram%20(.png)
 
 <!-- DEVELOPMENT PROCESS -->
 ## Development Process
