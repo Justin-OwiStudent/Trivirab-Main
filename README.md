@@ -155,30 +155,31 @@ The `Conceptual Process` is the set of actions, activities and research that was
 
 ### User-flow
 
-![image8](https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/User%20Flow%20Diagram%20(.png)
+![image8](https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/User%20Flow%20Diagram.png)
 
 <!-- DEVELOPMENT PROCESS -->
 ## Development Process
 
-The `Development Process` is the technical implementations and functionality done in the frontend and backend of the application.
+i made use of android Studio and Kotlin to make the frontend of this application, aswell as the functionality of this application, using intents to navigate and binding to call on values.
+
 
 ### Implementation Process
 <!-- stipulate all of the functionality you included in the project -->
 
-* Made use of both `functionality` to implement a specific feature.
-* `MVC/MVVM` design architecture implemented.
-* `Plugin` for this.
-* ETC.
+* made use of Intent to navigate to different activities
+* made use of Binding to call on values 
+* used Toasts to make "alerts" when needed to give the user a notification
 
 #### Highlights
 <!-- stipulated the highlight you experienced with the project -->
-* Sunshine.
-* Rainbows.
+* The Intent navigation was a big highlight for me during this development process
+* Binding was very interesting to make use of to call values and carry them through
+
 
 #### Challenges
 <!-- stipulated the challenges you faced with the project and why you think you faced it or how you think you'll solve it (if not solved) -->
-* Bugs.
-* Bugs.
+* Calling the username through the application and calling that in certain places, i struggled to call the username for the high score values and would need to have further insight to solve this 
+* resetting the high score was something that i wanted to implement but did not get to implement due to previous errors not being solved
 
 ### Reviews & Testing
 <!-- stipulate how you've conducted testing in the form of peer reviews, feedback and also functionality testing, like unit tests (if applicable) -->
@@ -190,25 +191,19 @@ The `Development Process` is the technical implementations and functionality don
 * Feedback one.
 * Feedback two.
 
-#### Unit Tests
-
-`Unit Tests` were conducted to establish working functionality. Here are all the tests that were ran:
-
-* Test 1 of this functionality
-* Test 2 of this functionality
 
 ### Future Implementation
 <!-- stipulate functionality and improvements that can be implemented in the future. -->
 
-* Future 1.
-* Future 2.
-
+* add More Catagories as well as more questions for the user to answer so that its not the same repeated questions
+* Make use of the High score reset button to reset all the high scores set by previous users
+* set all the high scores for each category 
 <!-- MOCKUPS -->
 ## Final Outcome
 
 ### Mockups
 
-![image9][image9]
+![image9](https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-1.png)
 <br>
 ![image10][image10]
 
@@ -238,7 +233,7 @@ Contributions are what makes the open-source community such an amazing place to 
 <!-- AUTHORS -->
 ## Authors
 
-* **Your Name & Surname** - [username](https://github.com/username)
+* **Justin Koster** - [username](https://github.com/Justin-OwiStudent)
 
 <!-- LICENSE -->
 ## License
@@ -248,8 +243,8 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 <!-- LICENSE -->
 ## Contact
 
-* **Your Name & Surname** - [email@address](mailto:email@address) - [@instagram_handle](https://www.instagram.com/instagram_handle/) 
-* **Project Link** - https://github.com/username/projectname
+* **Justin Koster** - [email@address](200100@virtualwindow.co.za) 
+* **Project Link** - https://github.com/Justin-OwiStudent/Trivirab-Main/issues/2
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
