@@ -145,13 +145,13 @@ The `Conceptual Process` is the set of actions, activities and research that was
 
 ### Ideation
 
-![image5][image5]
+![image5](https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/moodboard%20(1).png)
 <br>
 ![image6][image6]
 
 ### Wireframes
 
-![image7][image7]
+![image7](https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Wireframes.png)
 
 ### User-flow
 
