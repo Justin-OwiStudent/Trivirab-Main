@@ -131,7 +131,7 @@ Questions Activity, here the questions are displayed from all the catagories dep
 
 Here are the Catagories displayed that are available on the application
 
-<img src="https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-5.png" width="350" height="750">
+<img src="https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-5.png" width="400" height="750">
 
 <!-- ![image4](https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-5.png) -->
 ### Feature 3
