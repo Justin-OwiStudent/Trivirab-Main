@@ -205,7 +205,7 @@ i made use of android Studio and Kotlin to make the frontend of this application
 
 ![image9](https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-1.png)
 <br>
-![image10][image10]
+
 
 <!-- VIDEO DEMONSTRATION -->
 ### Video Demonstration
