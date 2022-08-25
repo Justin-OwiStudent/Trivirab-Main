@@ -90,7 +90,7 @@ The following instructions will get you a copy of the project up and running on 
 
 ### Prerequisites
 
-Ensure that you have the latest version of [Software](path/to/where/they/can/download/software) installed on your machine. The [Plugin](path/to/where/they/can/download/plugin) plugin will also be required.
+Ensure that you have the latest version of [Android Studio](https://developer.android.com/studio?gclid=CjwKCAjwu5yYBhAjEiwAKXk_eGBPEKpznIFNsu5Y9a8GOtO5n7ZnCNOe3jCEt3yMzmuhw4z2RBKrzBoCVJAQAvD_BwE&gclsrc=aw.ds) installed on your machine. The [Kotlin](https://kotlinlang.org/) plugin will also be required.
 
 ### How to install
 
@@ -99,12 +99,12 @@ Here are a couple of ways to clone this repo:
 
 1. Software </br>
 `Android Studio` -> `File` -> `New` -> `From Version Control` -> `Git`</br>
-Enter `https://github.com/username/projectname.git` into the URL field and press the `Clone` button.
+Enter `https://github.com/Justin-OwiStudent/Trivirab-Main` into the URL field and press the `Clone` button.
 
 2. Clone Repository </br>
 Run the following in the command-line to clone the project:
    ```sh
-   git clone https://github.com/username/projectname.git
+   git clone https://github.com/Justin-OwiStudent/Trivirab-Main
    ```
     Open `Software` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
 
@@ -114,32 +114,27 @@ Run the following in the command-line to install all the required dependencies:
    npm install
    ```
 
-4. Get a free API Key at [https://example.com](https://example.com) and enter it in the `config.js` file:
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
 
 
 <!-- FEATURES AND FUNCTIONALITY-->
 <!-- You can add the links to all of your imagery at the bottom of the file as references -->
 ## Features and Functionality
 
-![image2][image2]
+![image2](https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-2.png)
 ### Feature 1
 
-Description of Feature
+Questions Activity, here the questions are displayed from all the catagories depending on which one you choose.
 
-![image3][image3]
+![image3](https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-4.png)
 ### Feature 2
 
-Description of Feature
+Here are the Catagories displayed that are available on the application
 
-![image4][image4]
+![image4](https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-5.png)
 ### Feature 3
 
-Description of Feature
+This is a description page giving you instructions and details on how the game is played.
 
-![image5][image5]
 
 
 <!-- CONCEPT PROCESS -->
