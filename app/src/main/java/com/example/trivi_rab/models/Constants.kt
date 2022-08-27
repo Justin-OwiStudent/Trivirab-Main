@@ -123,8 +123,8 @@ object Constants {
         val que4 = Question(
             4,
             "What Cartoon had a talking dog?",
+            "Family Guy",
             "Rug Rats",
-            "Family GUy",
             "the simpons",
             "Johnny Bravo"
         )
@@ -139,16 +139,16 @@ object Constants {
         val que6 = Question(
             6,
             "What Cartoon was based on Small blue people?",
-            "The Simpsons",
             "Smurfs",
+            "The Simpsons",
             "Rug Rats",
             "Family guy"
         )
         val que7 = Question(
             7,
             "What was the dogs name in Family Guy?",
-            "Petter",
             "Brian",
+            "Petter",
             "Louis",
             "Chris"
         )
@@ -179,57 +179,57 @@ object Constants {
         val que1 = Question(
             1,
             "Which movie had a floating house?",
-            "Naruto Uzumaki",
-            "Kakashi Sensei",
-            "Saske Uchiha",
-            "Neji Huga"
+            "Lion King",
+            "Nemo",
+            "UP !",
+            "Cinderella"
         )
         val que2 = Question(
             2,
             "Which movie was based on lions?",
             "Cinderella",
-            "Lion King",
             "Moana",
-            "Nemo"
+            "Lion King",
+            "Finding Nemo"
         )
         val que3 = Question(
             3,
             "Which movie was based on fish ?",
             "Moana",
-            "Finding Nemo",
             "Lion King",
+            "Finding Nemo",
             "Beauty and the Beast"
         )
         val que4 = Question(
             4,
-            "Which movie had a floating house?",
-            "Naruto Uzumaki",
-            "Kakashi Sensei",
-            "Saske Uchiha",
-            "Neji Huga"
+            "Which movie had a blue monster?",
+            "Finding Nemo",
+            "Cinderella",
+            "Monsters Inc",
+            "Pinocio"
         )
         val que5 = Question(
             5,
             "Which movie had a Geni?",
             "Cinderella",
-            "Alladin",
             "Princess and the Frog",
+            "Alladin",
             "Finding Nemo"
         )
         val que6 = Question(
             6,
             "What movie had a, not so real boy?",
             "Finding Nemo",
+            "Aladin",
             "Pinocio",
-            "Allading",
             "Cinderella"
         )
         val que7 = Question(
             7,
-            "What movie had a, not so real boy?",
+            "What movie had talking cars",
             "Finding Nemo",
             "Pinocio",
-            "Allading",
+            "Cars",
             "Cinderella"
         )
 
