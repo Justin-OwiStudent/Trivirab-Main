@@ -27,7 +27,7 @@ class MainActivity2 : AppCompatActivity() {
                 Toast.makeText(this, "$username", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, Landing::class.java)
 
-                intent.putExtra("username", username)
+                intent.putExtra("username", "$username")
 
                 startActivity(intent)
                 finish()

@@ -126,19 +126,16 @@ Run the following in the command-line to install all the required dependencies:
 Questions Activity, here the questions are displayed from all the catagories depending on which one you choose.
 
 <img src="https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-4.png" width="350" height="750">
-<!-- (https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-4.png) -->
+
 ### Feature 2
 
 Here are the Catagories displayed that are available on the application
 
 <img src="https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-5.png" width="400" height="750">
 
-<!-- ![image4](https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-5.png) -->
 ### Feature 3
 
 This is a description page giving you instructions and details on how the game is played.
-
-
 
 <!-- CONCEPT PROCESS -->
 <!-- Briefly explain your concept ideation process -->

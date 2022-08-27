@@ -24,7 +24,7 @@ class resultActivity : AppCompatActivity() {
         //get scores
         val finalScore = intent.getIntExtra("currentScore", 0)
 
-        val username = intent.getStringExtra("username")
+        val username = intent.getStringExtra("username").toString()
 
 
 
@@ -73,7 +73,7 @@ class resultActivity : AppCompatActivity() {
         }
 
     private fun saveLastResults(username: String, result: Int){
-        intent.putExtra("username", username)
+        intent.putExtra("username", username).toString()
         val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
         val editor = sharedPref.edit()
 

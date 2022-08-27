@@ -3,6 +3,7 @@ package com.example.trivi_rab
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import com.example.trivi_rab.databinding.ActivityCatagorieBinding
 import com.example.trivi_rab.databinding.ActivityQuestionBinding
@@ -19,12 +20,15 @@ class CatagorieActivity : AppCompatActivity() {
         binding = ActivityCatagorieBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val username = intent.getStringExtra("username")
+        val username = intent.getStringExtra("username").toString()
+
+        Log.i("username", username)
 
 
 //        val intent = Intent(this, CatagorieActivity::class.java)
 
         binding.btnAnime.setOnClickListener{
+            Log.i("username", username)
             intent.putExtra("username", username)
             val intent = Intent(this, QuestionActivity::class.java)
             startActivity(intent)

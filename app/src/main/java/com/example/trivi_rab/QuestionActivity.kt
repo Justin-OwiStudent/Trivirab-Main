@@ -23,7 +23,8 @@ class QuestionActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        val username = intent.getStringExtra("username")
+        val username = intent.getStringExtra("username").toString()
+        Log.i("username", "$username")
         //get the question number from previous activity
         val questionNumber = intent.getIntExtra("questionNumber", 0)
 
@@ -42,13 +43,19 @@ class QuestionActivity : AppCompatActivity() {
 
         //handle next question click
         binding.btnNextQuestion.setOnClickListener{
+            intent.putExtra("username", "$username")
+
 
             var selectedAnswer = binding.rgAnswers.checkedRadioButtonId
 
             if(selectedAnswer == -1) { //not selected answer
+                intent.putExtra("username", "$username")
+
                 val toast = Toast.makeText(this, "Please select an answer", LENGTH_SHORT)
                 toast.show()
             } else { // selected answer correct and navigate
+                intent.putExtra("username", "$username")
+
                 var userAnswer = findViewById<RadioButton>(selectedAnswer)
 
                 //check correct answer
@@ -63,7 +70,7 @@ class QuestionActivity : AppCompatActivity() {
                 if(questionNumber + 1 == questions.count()) {
                     val intent = Intent(this, resultActivity::class.java)
                     intent.putExtra("currentScore", currentScore)
-                    intent.putExtra("username", username)
+                    intent.putExtra("username", username).toString()
                     startActivity(intent)
                     finish()
                 } else {
@@ -71,7 +78,7 @@ class QuestionActivity : AppCompatActivity() {
                     //pass next questionvalue
                     intent.putExtra("questionNumber", questionNumber + 1)
                     intent.putExtra("currentScore", currentScore)
-                    intent.putExtra("username", username)
+                    intent.putExtra("username", username).toString()
                     startActivity(intent)
                     finish()
                 }
