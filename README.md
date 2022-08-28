@@ -125,7 +125,7 @@ Run the following in the command-line to install all the required dependencies:
 
 Questions Activity, here the questions are displayed from all the catagories depending on which one you choose.
 
-<img src="https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-4.png" width="350" height="750">
+<img src="https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-5.png" width="600" height="750">
 
 ### Feature 2
 
@@ -135,7 +135,7 @@ Here are the Catagories displayed that are available on the application
 
 ### Feature 3
 
-This is a description page giving you instructions and details on how the game is played.
+This is a description page giving you instructions and details on how the game is to be played.
 
 <!-- CONCEPT PROCESS -->
 <!-- Briefly explain your concept ideation process -->
@@ -147,7 +147,7 @@ The `Conceptual Process` is the set of actions, activities and research that was
 
 ![image5](https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/moodboard.png)
 <br>
-![image6][image6]
+
 
 ### Wireframes
 
@@ -205,7 +205,14 @@ i made use of android Studio and Kotlin to make the frontend of this application
 
 ![image9](https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-1.png)
 <br>
-
+![image10](https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-2.png)
+<br>
+![image10](https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-3.png)
+<br>
+![image10](https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-4.png)
+<br>
+![image10](https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-5.png)
+<br>
 
 <!-- VIDEO DEMONSTRATION -->
 ### Video Demonstration
