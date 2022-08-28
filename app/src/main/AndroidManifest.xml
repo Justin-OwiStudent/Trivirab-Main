@@ -14,38 +14,38 @@
         android:theme="@style/Theme.TriviRab"
         tools:targetApi="31">
         <activity
-            android:name=".DisenyActivity"
+            android:name="com.example.trivi_rab.DisenyActivity"
             android:exported="false" />
         <activity
-            android:name=".CartoonActivity"
+            android:name="com.example.trivi_rab.CartoonActivity"
             android:exported="false" />
         <activity
-            android:name=".HowToActivity"
+            android:name="com.example.trivi_rab.HowToActivity"
             android:exported="false" />
         <activity
-            android:name=".Landing"
+            android:name="com.example.trivi_rab.Landing"
             android:exported="false" />
         <activity
-            android:name=".QuestionActivity"
+            android:name="com.example.trivi_rab.QuestionActivity"
             android:exported="true"
             android:theme="@style/Theme.TriviRab.actionbar" />
         <activity
-            android:name=".resultActivity"
+            android:name="com.example.trivi_rab.resultActivity"
             android:exported="false" />
         <activity
-            android:name=".CatagorieActivity"
+            android:name="com.example.trivi_rab.CatagorieActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name="com.example.trivi_rab.MainActivity2"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
+            android:name="com.example.trivi_rab.SplashScreen"
             android:exported="false" />
         <activity
-            android:name=".settingsActivity"
+            android:name="com.example.trivi_rab.settingsActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.trivi_rab.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>

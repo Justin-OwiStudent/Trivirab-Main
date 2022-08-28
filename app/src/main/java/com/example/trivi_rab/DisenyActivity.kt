@@ -1,6 +1,7 @@
 package com.example.trivi_rab
 
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.RadioButton
@@ -8,6 +9,7 @@ import android.widget.Toast
 import com.example.trivi_rab.databinding.ActivityQuestionBinding
 import com.example.trivi_rab.models.Constants
 import com.example.trivi_rab.models.Question
+
 
 class DisenyActivity : AppCompatActivity() {
     private lateinit var binding: ActivityQuestionBinding
@@ -47,10 +49,11 @@ class DisenyActivity : AppCompatActivity() {
 
                 //check correct answer
                 if(userAnswer.text.toString() == currentQuestion.optionThree) {
+                    binding.rbAnswerThree.setTextColor(Color.parseColor("#4DFF00"))
                     currentScore += 1
-
-
-
+                }   else {
+                    binding.rbAnswerThree.setTextColor(Color.parseColor("#F30000"))
+                    currentScore += 0
                 }
 
 
@@ -86,6 +89,9 @@ class DisenyActivity : AppCompatActivity() {
         binding.rbAnswerTwo.text = currentQuestion.optionTwo
         binding.rbAnswerThree.text = currentQuestion.optionThree
         binding.rbAnswerFour.text = currentQuestion.optionFour
+
+        binding.pbLine.progress = currentQuestion.id
+        binding.tvProgress.text = currentQuestion.id.toString() + "/7"
     }
 
 

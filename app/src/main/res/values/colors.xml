@@ -26,8 +26,8 @@
 
     <color name="MyOrangeTint">#C68963</color>
 
-    <color name="MySuccessColor">#C68963</color>
-    <color name="MyFailColor">#C68963</color>
+    <color name="MySuccessColor">#4DFF00</color>
+    <color name="MyFailColor">#F30000</color>
 
     <color name="LinkBlue">#3768DC</color>
 

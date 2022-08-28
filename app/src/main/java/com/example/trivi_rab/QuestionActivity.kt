@@ -1,6 +1,7 @@
 package com.example.trivi_rab
 
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -9,8 +10,8 @@ import android.widget.Toast
 import android.widget.Toast.LENGTH_SHORT
 import com.example.trivi_rab.databinding.ActivityQuestionBinding
 import com.example.trivi_rab.models.Constants.getAllNarutoQuestions
-import com.example.trivi_rab.models.Constants.getAllCartoonQuestions
 import com.example.trivi_rab.models.Question
+
 
 class QuestionActivity : AppCompatActivity() {
     private lateinit var binding: ActivityQuestionBinding
@@ -60,17 +61,19 @@ class QuestionActivity : AppCompatActivity() {
 
                 //check correct answer
                 if(userAnswer.text.toString() == currentQuestion.optionTwo) {
+                    binding.rbAnswerTwo.setTextColor(Color.parseColor("#4DFF00"))
                     currentScore += 1
-
-                    //TODO: update ui to show if answer is right
-
+                }
+                else {
+                    binding.rbAnswerTwo.setTextColor(Color.parseColor("#F30000"))
+                    currentScore += 0
                 }
 
 
                 if(questionNumber + 1 == questions.count()) {
                     val intent = Intent(this, resultActivity::class.java)
                     intent.putExtra("currentScore", currentScore)
-                    intent.putExtra("username", username).toString()
+                    intent.putExtra("username", "$username")
                     startActivity(intent)
                     finish()
                 } else {
@@ -78,7 +81,7 @@ class QuestionActivity : AppCompatActivity() {
                     //pass next questionvalue
                     intent.putExtra("questionNumber", questionNumber + 1)
                     intent.putExtra("currentScore", currentScore)
-                    intent.putExtra("username", username).toString()
+                    intent.putExtra("username", "$username")
                     startActivity(intent)
                     finish()
                 }

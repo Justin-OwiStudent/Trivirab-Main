@@ -105,7 +105,7 @@
   </com.google.android.material.card.MaterialCardView>
 
   <androidx.cardview.widget.CardView
-      android:backgroundTint="@color/MyPurple"
+      android:backgroundTint="@color/MyOrange"
       app:cardCornerRadius="10dp"
       android:layout_width="100dp"
       android:layout_gravity="center"

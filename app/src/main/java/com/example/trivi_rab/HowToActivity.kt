@@ -3,8 +3,8 @@ package com.example.trivi_rab
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.trivi_rab.databinding.ActivityCatagorieBinding
 import com.example.trivi_rab.databinding.ActivityHowToBinding
+
 
 class HowToActivity : AppCompatActivity() {
 

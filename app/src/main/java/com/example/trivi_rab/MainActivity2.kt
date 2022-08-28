@@ -3,8 +3,10 @@ package com.example.trivi_rab
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import com.example.trivi_rab.databinding.ActivityMainBinding
+
 
 class MainActivity2 : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -27,11 +29,14 @@ class MainActivity2 : AppCompatActivity() {
                 Toast.makeText(this, "$username", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, Landing::class.java)
 
-                intent.putExtra("username", "$username")
+                intent.putExtra("username", username).toString()
+
+                Log.i("username", username.toString())
 
                 startActivity(intent)
                 finish()
             }
+
         }
 
 

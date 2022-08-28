@@ -1,20 +1,13 @@
 package com.example.trivi_rab
 
 import android.content.Intent
-import android.graphics.Color
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.method.LinkMovementMethod
-import android.view.LayoutInflater
-import android.widget.TextView
-import com.example.trivi_rab.databinding.ActivityResultBinding
 import com.example.trivi_rab.databinding.ActivitySettingsBinding
-import com.google.android.material.slider.RangeSlider
 
 
-
-class settingsActivity : AppCompatActivity() {
+class SettingsActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySettingsBinding
 
@@ -35,15 +28,10 @@ class settingsActivity : AppCompatActivity() {
 
 
         binding.tvMainLink.setOnClickListener {
-            var intent = Intent(Intent.ACTION_VIEW, queryURL)
+            val intent = Intent(Intent.ACTION_VIEW, queryURL)
             startActivity(intent)
 
         }
-//        fun MainLink() {
-//            val linkTextView = findViewById<TextView>(R.id.MainLink)
-//            linkTextView.movementMethod = LinkMovementMethod.getInstance();
-//            linkTextView.setLinkTextColor(Color.BLUE)
-//        }
-
+//
     }
 }

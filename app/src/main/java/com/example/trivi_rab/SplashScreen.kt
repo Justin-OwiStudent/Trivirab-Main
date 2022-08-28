@@ -2,6 +2,7 @@ package com.example.trivi_rab
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.trivi_rab.R
 
 class SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
