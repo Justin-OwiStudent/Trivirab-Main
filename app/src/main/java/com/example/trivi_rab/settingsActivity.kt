@@ -7,7 +7,7 @@ import android.os.Bundle
 import com.example.trivi_rab.databinding.ActivitySettingsBinding
 
 
-class SettingsActivity : AppCompatActivity() {
+class settingsActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySettingsBinding
 

@@ -22,7 +22,7 @@
       <a href="https://github.com/Justin-OwiStudent/Trivirab-Main"><strong>Explore the docs »</strong></a>
    <br />
    <br />
-   <a href="path/to/demonstration/video">View Demo</a>
+   <a href="https://www.youtube.com/watch?v=zHbNVSvh1Xo">View Demo</a>
     ·
     <a href="https://github.com/Justin-OwiStudent/Trivirab-Main/issues">Report Bug</a>
     ·
@@ -204,7 +204,7 @@ i made use of android Studio and Kotlin to make the frontend of this application
 
 To see a run through of the application, click below:
 
-[View Demonstration](path/to/video/demonstration)
+[View Demonstration](https://www.youtube.com/watch?v=zHbNVSvh1Xo)
 
 <!-- ROADMAP -->
 ## Roadmap

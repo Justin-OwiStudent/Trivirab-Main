@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/MyWhite"
     android:backgroundTint="@color/MyOrange"
-    tools:context="SettingsActivity">
+    tools:context=".settingsActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-
 import com.example.trivi_rab.databinding.ActivityCatagorieBinding
 import com.example.trivi_rab.models.Constants
 
@@ -52,7 +51,7 @@ class CatagorieActivity : AppCompatActivity() {
 
         binding.btnSettings.setOnClickListener{
             intent.putExtra("username", username)
-            val intent = Intent(this, SettingsActivity::class.java)
+            val intent = Intent(this, settingsActivity::class.java)
             startActivity(intent)
         }
 
