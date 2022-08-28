@@ -108,11 +108,6 @@ Run the following in the command-line to clone the project:
    ```
     Open `Software` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
 
-3. Install Dependencies </br>
-Run the following in the command-line to install all the required dependencies:
-   ```sh
-   npm install
-   ```
 
 
 
@@ -125,13 +120,13 @@ Run the following in the command-line to install all the required dependencies:
 
 Questions Activity, here the questions are displayed from all the catagories depending on which one you choose.
 
-<img src="https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-5.png" width="600" height="750">
+<img src="https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-5.png" >
 
 ### Feature 2
 
 Here are the Catagories displayed that are available on the application
 
-<img src="https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-5.png" width="400" height="750">
+<img src="https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/Mockup-5.png" >
 
 ### Feature 3
 
