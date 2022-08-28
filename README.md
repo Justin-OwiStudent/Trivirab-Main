@@ -19,7 +19,7 @@
 <p align="center">
 
   <a href="https://github.com/Justin-OwiStudent/Trivirab-Main">
-    <img src="https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/app/src/main/res/drawable/logo.png" alt="Logo" width="140" height="140">
+    <img src="https://github.com/Justin-OwiStudent/Trivirab-Main/blob/main/mockups/LOGO.png" alt="Logo" width="140" height="140">
   </a>
   
   <h3 align="center">Trivi - Rab</h3>
